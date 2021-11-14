@@ -21,7 +21,7 @@ async function quoteAPI() {
   const API_Key = "SF58QLX7JQWWACZL";
 
   await fetch(
-    https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${companyName}.BSE&apikey=${API_Key}
+    `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${companyName}.BSE&apikey=${API_Key}`
   )
     .then((response) => {
       return response.json();
