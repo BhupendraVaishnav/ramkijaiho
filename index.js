@@ -62,7 +62,7 @@ async function timeSeriesAPI() {
   // console.log(days);
 
   fetch(
-    https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=${companyName}.BSE&apikey=SF58QLX7JQWWACZL
+    `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=${companyName}.BSE&apikey=SF58QLX7JQWWACZL`
   )
     .then((response) => {
       return response.json();
