@@ -1,0 +1,96 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  background: #f2f2f2;
+  font-family: "Open Sans", sans-serif;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #cccccc;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #495464;
+}
+
+.searchTerm:focus {
+  color: #aaaaaa;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #cccccc;
+  background: #cccccc;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap {
+  width: 30%;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.info {
+  width: 50%;
+  display: flex; /* establish flex container */
+  flex-direction: row; /* default value; can be omitted */
+  flex-wrap: nowrap; /* default value; can be omitted */
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 10%;
+  text-transform: uppercase;
+}
+
+.tableSection {
+  text-align: center;
+}
+
+table {
+  width: 70%;
+  margin: auto;
+  margin-top: 2%;
+  table-layout: fixed;
+}
+#header {
+  background-color: rgb(255, 255, 255);
+}
+#tableBody {
+  height: 300px;
+  overflow-x: auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+th {
+  padding: 20px 15px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+  color: rgb(97, 97, 97);
+  text-transform: uppercase;
+}
+td {
+  padding: 15px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 12px;
+  color: rgb(99, 99, 99);
+  border-bottom: solid 1px rgb(192, 192, 192);
+}
